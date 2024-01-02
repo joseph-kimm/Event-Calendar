@@ -1,0 +1,72 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Add New Person</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+    <style>
+      .btn-custom{
+        background-color: #B53135;
+        color: white;
+      }
+      .btn-custom:hover{
+        background-color: #6E1E21;
+        color: white;
+      }
+      body{
+        background-color: #FFEEBE;
+      }
+    </style>
+  
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="row h-100">
+            <div class="col-lg-4"><!-- this is just here to center the next column --></div>
+
+            <div class="col-lg-4 text-center my-auto">
+                <p>
+                  <form action="/search" method="post">
+                    <div class="mb-3">
+                      <label class="form-label">Date</label>
+                      <input type="date" class="form-control" name="date">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Category</label>
+                        <p>
+                        <select name="category" id="category">
+                            <option value="other">Other</option>
+                            <option value="social">Social</option>
+                            <option value="affinityGroup">Affinity Group</option>
+                            <option value="clubEvent">Club Event</option>
+                            <option value="performance">Performance</option>
+                            <option value="academic">Academic</option>
+                            <option value="postGrad">PostGrad Event</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Keyword</label>
+                      <input type="text" class="form-control" name="keyword">
+                    </div>
+
+                    <input type="submit" class="btn btn-custom my-2"></button>
+                  </form>
+                </p>
+                <p>
+                    <a href="/" class="btn btn-custom my-2">Cancel</a>
+                </p>
+            </div>
+
+            <div class="col-lg-4"><!-- this is just here to center the previous column --></div>
+
+        </div>
+    </div>
+
+    <script>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
+

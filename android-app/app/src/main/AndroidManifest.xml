@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SampleWebApp"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/security_config"
+        tools:targetApi="31">
+        <activity
+            android:name=".StartActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SearchEventActivity"></activity>
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".MyeventActivity"></activity>
+        <activity android:name=".EditActivity"></activity>
+        <activity android:name=".MyeventsActivity"></activity>
+<!--        <activity android:name=".MyeventActivity"></activity>-->
+<!--        <activity android:name=".EditActivity"></activity>-->
+        <activity android:name=".HomepageActivity"></activity>
+        <activity android:name=".DeleteActivity"></activity>
+        <activity android:name=".PostEventActivity"></activity>
+        <activity android:name=".ViewActivity"></activity>
+<!--        <activity android:name=".SearchEventActivity"></activity>-->
+        <activity android:name=".ChangePasswordActivity"></activity>
+        <activity android:name=".ViewEventActivity"></activity>
+
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+</manifest>

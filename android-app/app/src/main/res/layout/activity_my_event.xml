@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/vanilla"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MyeventActivity">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/postTitle"
+                android:layout_width="match_parent"
+                android:layout_height="101dp"
+                android:background="#B53135"
+                android:gravity="center"
+                android:text="Event Information"
+                android:textColor="@color/white"
+                android:textSize="34dp"
+                android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Title: "
+                android:textSize="40dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Category: "
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text=""
+                    android:textSize="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Host: "
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/host"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textSize="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Location: "
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textSize="20dp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Date: "
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textSize="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Time: "
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textSize="20dp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Bring: "
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/toBring"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textSize="20dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Audience: "
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/audience"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textSize="20dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Accessibility: "
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/accessibility"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Description: "
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Edit"
+                    android:backgroundTint="#B53135"
+                    android:onClick="onEditButtonClick"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Delete"
+                    android:backgroundTint="#B53135"
+                    android:onClick="onDeleteButtonClick"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Go Back"
+                android:backgroundTint="#B53135"
+                android:onClick="onGoBackButtonClick"/>
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

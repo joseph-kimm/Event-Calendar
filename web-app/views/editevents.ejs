@@ -1,0 +1,101 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edit Events</title> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      .btn-custom{
+        background-color: #B53135;
+        color: white;
+      }
+      .btn-custom:hover{
+        background-color: #6E1E21;
+        color: white;
+      }
+      body{
+        background-color: #FFEEBE;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row h-100">
+          <div class="col-lg-4"><!-- this is just here to center the next column --></div>
+
+          <div class="col-lg-4 text-center my-auto">
+              <p>
+                <form action="/edit" method="post">   
+                  <div class="mb-3">
+                    <label class="form-label">Title</label> <!--Event Title-->
+                    <input type="text" class="form-control" name="title" value="<%= event.title %>">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Category</label> <!--Event Category-->
+                    <select name="category" id="category">
+                        <option value="other">Other</option>
+                        <option value="social">Social</option>
+                        <option value="affinity group">Affinity Group</option>
+                        <option value="club event">Club Event</option>
+                        <option value="performance">Performance</option>
+                        <option value="academic">Academic</option>
+                        <option value="post grad">PostGrad Event</option>
+                    </select>
+                    <!-- <input type="text" class="form-control" name="category" value="<%= event.category %>"> -->
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Host</label> <!--Event Host-->
+                    <input type="text" class="form-control" name="host" value="<%= event.host %>">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Location</label> <!--Event Location-->
+                    <input type="text" class="form-control" name="location" value="<%= event.location %>">
+                  </div>
+
+
+                  <div class="mb-3">
+                    <label class="form-label">Date</label> <!--Event Date-->
+                    <input type="date" class="form-control" name="date" value="<%= new Date(event.date).toISOString().split('T')[0] %>">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">StartTime</label> <!--Event StartTime-->
+                    <input type="time" class="form-control" name="startTime" value="<%= event.startTime %>">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">EndTime</label> <!--Event EndTime-->
+                    <input type="time" class="form-control" name="endTime" value="<%= event.endTime %>">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">ToBring</label> <!--Event toBring-->
+                    <input type="text" class="form-control" name="toBring" value="<%= event.toBring %>">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">IntendedAudience</label> <!--Event intendedAudience-->
+                    <input type="text" class="form-control" name="intendedAudience" value="<%= event.intendedAudience %>">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">AccessibilityInfo</label> <!--Event accessibilityInfo-->
+                    <input type="text" class="form-control" name="accessibilityInfo" value="<%= event.accessibilityInfo %>">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">AdditionalDescription</label> <!--Event additionalDescription-->
+                    <input type="text" class="form-control" name="additionalDescription" value="<%= event.additionalDescription %>">
+                  </div>
+                  <input type="submit" class="btn btn-custom my-2"></button>
+                </form>
+              </p>
+              <p>
+                  <a href="/" class="btn btn-custom my-2">Cancel</a>
+              </p>
+          </div>
+
+          <div class="col-lg-4"><!-- this is just here to center the previous column --></div>
+
+      </div>
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

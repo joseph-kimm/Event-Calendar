@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Sample Web App</string>
+    <string-array name="category_array">
+        <item>other</item>
+        <item>social</item>
+        <item>affinity group</item>
+        <item>club event</item>
+        <item>performance</item>
+        <item>academic</item>
+        <item>post grad</item>
+    </string-array>
+</resources>

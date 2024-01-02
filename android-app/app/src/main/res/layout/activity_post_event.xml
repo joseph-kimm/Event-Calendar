@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/vanilla"
+    tools:context=".PostEventActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+        <TextView
+            android:id="@+id/postTitle"
+            android:layout_width="match_parent"
+            android:layout_height="101dp"
+            android:background="#B53135"
+            android:gravity="center"
+            android:text="Event Form"
+            android:textColor="@color/white"
+            android:textSize="34dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="41dp">
+
+            <EditText
+                android:id="@+id/editTitle"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="-51dp"
+                android:background="#f5f2e1"
+                android:gravity="left"
+                android:maxLines="1"
+                android:textSize="21dp" />
+
+            <TextView
+                android:layout_width="115dp"
+                android:layout_height="39dp"
+                android:gravity="left"
+                android:text="Title:"
+                android:textSize="21dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/editCat"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="-13dp"
+                android:textSize="21dp"/>
+
+            <TextView
+                android:layout_width="115dp"
+                android:layout_height="39dp"
+                android:gravity="left"
+                android:text="Category:"
+                android:textSize="21dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editHost"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="-64dp"
+                android:background="#f5f2e1"
+                android:gravity="left"
+                android:maxLines="1"
+                android:textSize="21dp" />
+
+            <TextView
+                android:layout_width="115dp"
+                android:layout_height="39dp"
+                android:gravity="left"
+                android:text="Host:"
+                android:textSize="21dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editLoc"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="-10dp"
+                android:background="#f5f2e1"
+                android:gravity="left"
+                android:maxLines="1"
+                android:textSize="21dp" />
+
+            <TextView
+                android:layout_width="115dp"
+                android:layout_height="39dp"
+                android:gravity="left"
+                android:text="Location:"
+                android:textSize="21dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editDate"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="-63dp"
+                android:background="#f5f2e1"
+                android:gravity="left"
+                android:maxLines="1"
+                android:textSize="21dp"
+                android:inputType="date"/>
+
+            <TextView
+                android:layout_width="115dp"
+                android:layout_height="39dp"
+                android:gravity="left"
+                android:text="Date:"
+                android:textSize="21dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editStart"
+                android:layout_width="291dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="-15dp"
+                android:layout_marginEnd="-7dp"
+                android:background="#f5f2e1"
+                android:gravity="left"
+                android:maxLines="1"
+                android:textSize="21dp"
+                android:inputType="time"/>
+
+            <TextView
+                android:layout_width="115dp"
+                android:layout_height="39dp"
+                android:gravity="left"
+                android:text="StartTime:"
+                android:textSize="21dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editEnd"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="-13dp"
+                android:background="#f5f2e1"
+                android:gravity="left"
+                android:maxLines="1"
+                android:textSize="21dp"
+                android:inputType="time"/>
+
+            <TextView
+                android:layout_width="115dp"
+                android:layout_height="39dp"
+                android:gravity="left"
+                android:text="EndTime:"
+                android:textSize="21dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editBring"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="-10dp"
+                android:background="#f5f2e1"
+                android:gravity="left"
+                android:maxLines="1"
+                android:textSize="21dp"/>
+
+            <TextView
+                android:layout_width="115dp"
+                android:layout_height="39dp"
+                android:gravity="left"
+                android:text="To Bring:"
+                android:textSize="21dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editAud"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="-10dp"
+                android:background="#f5f2e1"
+                android:gravity="left"
+                android:maxLines="1"
+                android:textSize="21dp" />
+
+            <TextView
+                android:layout_width="115dp"
+                android:layout_height="39dp"
+                android:gravity="left"
+                android:text="Audience:"
+                android:textSize="21dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="69dp">
+
+            <EditText
+                android:id="@+id/editAcc"
+                android:layout_width="267dp"
+                android:layout_height="58dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="-13dp"
+                android:background="#f5f2e1"
+                android:gravity="left"
+                android:maxLines="2"
+                android:textSize="21dp" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="39dp"
+                android:gravity="left"
+                android:text="Accessibility:"
+                android:textSize="21dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="139dp">
+
+            <EditText
+                android:id="@+id/editDes"
+                android:layout_width="266dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="-15dp"
+                android:layout_marginBottom="4dp"
+                android:background="#f5f2e1"
+                android:gravity="left"
+                android:maxLines="5"
+                android:textSize="21dp" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="39dp"
+                android:gravity="left"
+                android:text="Description:"
+                android:textSize="21dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="139dp">
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="230dp"
+                android:gravity="center"
+                android:backgroundTint="#B53135"
+                android:text="Create"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:onClick="onCreateButtonClick"/>
+
+            <Button
+                android:layout_width="117dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="12dp"
+                android:gravity="center"
+                android:onClick="onBackButtonClick"
+                android:backgroundTint="#B53135"
+                android:text="Back"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
